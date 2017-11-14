@@ -1,0 +1,8 @@
+在C盘User下的.gitConfig中用编辑器打开，粘贴即可，如果有[alias]，则只粘贴下面的
+
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	br = branch
+	ck = checkout
+	cb = checkout -b
+	st = status
