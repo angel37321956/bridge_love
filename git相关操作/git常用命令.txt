@@ -7,3 +7,22 @@ $ git remote add origin git@github.com:angel37321956/bridge_love.git
 
 $ git push origin dev
 --git将本地创建分支推送到远程仓库
+
+
+
+origin master
+origin dev
+
+master
+dev
+
+-- 1、第一次
+git checkout dev
+git pull origin dev
+git checkout -b 自己的分支名称
+写代码
+git checkout dev
+git merge 自己的分支名称
+git status 或者 git diff 查看冲突文件并处理
+git push origin dev
+dev
