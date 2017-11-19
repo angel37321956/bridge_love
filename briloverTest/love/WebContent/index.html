@@ -1,1 +1,33 @@
-桥公子这厢有礼了~
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>请登录</title>
+
+<script type="text/javascript" src="js/imp/angular.js"></script>
+<script type="text/javascript" src="js/imp/sea.js"></script>
+<script type="text/javascript" src="js/imp/underscore.js"></script>
+<script type="text/javascript" src="js/love/center/loginHome.js"></script>
+
+</head>
+<body ng-app="indexApp">
+	<div ng-controller="indexCtrl">
+		<div id="form_login">
+			<div class="form_row first_row">
+				<input type="text" placeholder="请输入用户名" ng-model="base.userAccount" />
+			</div>
+			<div class="form_row">
+				<input type="password" placeholder="请输入密码" ng-model="base.userPassword">
+			</div>
+			<div class="login-btn-set">
+				<input type="button" value="登    录"
+					style="width: 340px; height: 40px; font-size: 24px; background-color: orangered;"
+					ng-click="fn.login()" />
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	seajs.use('love.index');
+</script>
+</html>

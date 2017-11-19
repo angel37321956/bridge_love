@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>test-shiro</display-name>
+  <display-name>love</display-name>
   <filter>
     <description>Spring自带的字符集编码</description>
     <filter-name>encodingFilter</filter-name>
@@ -22,7 +22,10 @@
   </filter-mapping>
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath*:applicationContext.xml,classpath:spring-shiro.xml</param-value>
+    <param-value>
+    	classpath*:applicationContext.xml
+    	classpath:spring-shiro.xml
+    </param-value>
   </context-param>
   <listener>
     <description>启动spring的监听器</description>
