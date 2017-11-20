@@ -1,6 +1,13 @@
 package com.bridge.love.dto;
 
-public class UserDTO extends Base{
+import java.io.Serializable;
+
+public class UserDTO extends Base implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2734069028241174706L;
 	/**
 	 * 用户联系方式
 	 */

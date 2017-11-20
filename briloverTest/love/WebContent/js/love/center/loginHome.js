@@ -5,12 +5,12 @@ define('love.index', function (require) {
 		$scope.base = {};
 		
 		$scope.fn.login = function () {
-			var param = {
+			var userInfo = {
 				userAccount : $scope.base.userAccount,
 				userPassword : $scope.base.userPassword
 			}
 			var url = 'http://localhost:8080/love/loginSys/login';
-		    $http.post(url, param).success(function(result) {  
+		    $http.post(url, userInfo).success(function(result) {  
 		        //  
 		    	console.log(23123);
 		    });  

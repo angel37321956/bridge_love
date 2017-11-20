@@ -1,15 +1,21 @@
 package com.bridge.love.login.service.impl;
 
-import java.util.Map;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bridge.love.dto.UserDTO;
+import com.bridge.love.login.dao.LoginDao;
 import com.bridge.love.login.service.LoginService;
 
+@Service
 public class LoginServiceImpl implements LoginService{
 
-	public Map<String, Object> userLogin (UserDTO userInfo) {
-		return null;
+	@Autowired
+	private LoginDao loginDao;
+	
+	public UserDTO userLogin (UserDTO userInfo) {
+		userInfo.setUserAccount("qweqwe");
+		UserDTO user = loginDao.login(userInfo);
+		return user;
 	}
 }
