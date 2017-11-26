@@ -46,6 +46,7 @@
 	<mvc:resources location="/" mapping="/**/*.png" />
 	<mvc:resources location="/" mapping="/**/*.gif" />
 	<mvc:resources location="/" mapping="/**/*.jpg" />
+	<mvc:resources location="/" mapping="/**" />
 	<!-- 静态的文件不需要SpringMVC拦截 结束 -->
 
 
