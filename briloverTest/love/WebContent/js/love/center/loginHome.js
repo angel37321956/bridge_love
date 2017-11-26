@@ -9,7 +9,7 @@ define('love.index', function (require) {
 				userAccount : $scope.base.userAccount,
 				userPassword : $scope.base.userPassword
 			}
-			var url = 'http://localhost:8080/love/loginSys/login';
+			var url = 'http://localhost:8080/loginSys/login';
 		    $http.post(url, userInfo).success(function(result) {  
 		        //  
 		    	console.log(23123);

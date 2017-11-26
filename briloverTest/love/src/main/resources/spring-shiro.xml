@@ -33,7 +33,6 @@
 				/js/** = anon
 				/loginSys/login =anon
 				/index.jsp =anon
-				/** =authc
 			</value>
 		</property>
 	</bean>
