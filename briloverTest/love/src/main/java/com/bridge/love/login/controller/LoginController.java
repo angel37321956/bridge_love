@@ -1,5 +1,6 @@
 package com.bridge.love.login.controller;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,7 +20,8 @@ public class LoginController {
 	@ResponseBody
 	@RequestMapping(value="/login")
 	public UserDTO userLogin (@RequestBody UserDTO userInfo) {
-		
+		Logger logger = Logger.getLogger(LoginController.class);
+		logger.info("asdasd",new Exception("asdasd"));
 		UserDTO userLogin = loginservice.userLogin(userInfo);
 		return userLogin;
 	}
